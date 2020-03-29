@@ -8,13 +8,17 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "sass": "^1.26.3",
+    "tailwindcss": "^1.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/stylesheet/tailwind.css -o src/assets/stylesheet/index.css",
+    "watch:css": "postcss src/assets/stylesheet/tailwind.css -o src/assets/stylesheet/index.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.5",
+    "postcss-cli": "^7.1.0"
   }
 }
