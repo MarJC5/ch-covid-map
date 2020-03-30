@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from './header';
 
 function Footer() {
   return (
     <div className="flex flex-col lg:flex-row justify-cenrer items-center lg:justify-between w-full p-6">
       <h4 className="text-center lg:text-left mb-4 lg:mb-0">
-        <a href="https://marjc.ch/">MARJC</a>
         <span className="flex items-center font-medium opacity-75 text-xs">Contagion of the coronavirus in Switzerland</span>
       </h4>
       <ul className="flex flex-row items-center justify-center m-0">

@@ -11,6 +11,28 @@
   cursor: pointer;
 }
 
-.App-map path:hover {
-  fill: rgba(33, 33, 33, 0.6);
+.App-map .land-info {
+  z-index: 10;
+  fill: #FC8181;
+  cursor: pointer;
+}
+
+.App-map .land-info--wave {
+  z-index: 5;
+  fill: #FEB2B2;
+  animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  animation-duration: 1.2s;
+  animation-name: colorWave;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes colorWave {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

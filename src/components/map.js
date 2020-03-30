@@ -32,6 +32,62 @@ function Map() {
           <path id="CH-ZG" title="Zug" className="land" d="M330.93,111.25L332.63,116.4L335.29,116.11L340.98,119.49L344.98,117.2L350.62,116.6L356.27,119.53L357.5,126.32L364.94,126.77L365.86,129.01L369.29,128.16L369.29,128.16L370.45,130.65L368.29,132.43L367.79,135.95L366.67,137.59L364.96,137.83L362.1,141.96L357.83,141.76L352.02,144.39L351.55,141.96L346.27,143.04L342.21,140.77L342.21,140.77L342.31,138.16L340.51,135.65L337.26,138.22L337.26,138.22L336.75,137.99L336.75,137.99L336.1,135.08L332.12,136.48L331.32,132.87L331.32,132.87L331.75,128.14L329.95,125.55L330.45,121.95L329,115.99z"/>
           <path id="CH-ZH" title="Zürich" className="land" d="M365.32,24.52L368.92,31.57L371.49,33.03L376.78,33.75L381.43,31.12L382.38,28.4L384.52,28.58L384.51,31.16L387.43,32.19L384.39,41.29L376.83,37.02L375.76,39.74L376.9,43.07L384.7,44.9L384.91,47.28L388.05,46.84L390.77,48.85L387.76,50.31L389.44,54.63L396.97,56.34L397.04,64.45L395.45,65.06L395.15,67.15L398.39,71.25L398.31,73.56L401.7,74.15L400.32,74.71L400.32,74.71L398.65,74.67L398.65,74.67L399.04,78.37L397.78,80.85L400.58,81.61L403.21,86.08L403.21,86.08L405.45,90.49L406.98,90.77L408.78,97.23L407.38,99.83L405.14,100.25L403.89,102.83L401.88,103.58L403.83,105.17L402.94,108L401.75,109.39L393.64,110.72L392.82,112.34L390.83,110.98L384.36,111.79L383.27,113.31L384.95,117.06L384.95,117.06L382.73,116.64L370.81,120.56L367.67,125.03L369.29,128.16L369.29,128.16L365.86,129.01L364.94,126.77L357.5,126.32L356.27,119.53L350.62,116.6L344.98,117.2L340.98,119.49L335.29,116.11L332.63,116.4L330.93,111.25L330.93,111.25L328.23,103.26L329.43,103.62L333.66,101.08L337.19,94.56L334.55,96.16L331.59,96.02L331.97,93.86L330.31,91.98L330.78,87.25L329.26,85.8L328.94,83.26L326.44,81.29L328.36,77.51L328.06,75.61L326.34,74.67L327.78,74.13L327.29,72.13L328.23,71.09L325.29,67.97L326.51,67.01L326.33,65.18L324.96,65.1L324.16,60.94L324.69,59.31L326.88,58.75L327.41,56.08L328.88,56.24L331.93,52.18L332.38,47.75L332.38,47.75L334.29,48.31L342.29,45.42L341.64,43.89L338.76,44.8L337.3,41.33L338.8,41.01L340.32,38.7L344.19,38.16L345.54,35.09L348.36,35.55L352.48,38.26L353.18,39.38L351.47,41.59L351.47,41.59L348.04,44.98L351.02,50.88L356.16,40.48L356.16,40.48L357.33,38.56L356.12,33.05L357.85,31.22L358.58,32.87L357.6,33.73L358.75,34.11L360.53,31.67L358.74,29.4L358.74,29.4L358.25,26.56L360.45,25.88L360.29,23.13L362.88,22.61z"/>
         </g>
+        <g>
+          <circle className="land-info--wave CH-AG" cx="300" cy="75" r="14" />
+          <circle className="land-info--wave CH-AI" cx="465" cy="100" r="14" />
+          <circle className="land-info--wave CH-AR" cx="450" cy="90" r="14" />
+          <circle className="land-info--wave CH-BE" cx="225" cy="200" r="14" />
+          <circle className="land-info--wave CH-BL" cx="250" cy="73" r="14" />
+          <circle className="land-info--wave CH-BS" cx="225" cy="47" r="14" />
+          <circle className="land-info--wave CH-FR" cx="155" cy="220" r="14" />
+          <circle className="land-info--wave CH-GE" cx="25" cy="315" r="14" />
+          <circle className="land-info--wave CH-GL" cx="420" cy="165" r="14" />
+          <circle className="land-info--wave CH-GR" cx="495" cy="225" r="14" />
+          <circle className="land-info--wave CH-JU" cx="165" cy="90" r="14" />
+          <circle className="land-info--wave CH-LU" cx="290" cy="145" r="14" />
+          <circle className="land-info--wave CH-NE" cx="115" cy="160" r="14" />
+          <circle className="land-info--wave CH-NW" cx="330" cy="175" r="14" />
+          <circle className="land-info--wave CH-OW" cx="303" cy="190" r="14" />
+          <circle className="land-info--wave CH-SH" cx="350" cy="17" r="14" />
+          <circle className="land-info--wave CH-SG" cx="455" cy="140" r="14" />
+          <circle className="land-info--wave CH-SO" cx="225" cy="95" r="14" />
+          <circle className="land-info--wave CH-SZ" cx="378" cy="150" r="14" />
+          <circle className="land-info--wave CH-TI" cx="385" cy="300" r="14" />
+          <circle className="land-info--wave CH-UR" cx="360" cy="205" r="14" />
+          <circle className="land-info--wave CH-VS" cx="215" cy="320" r="14" />
+          <circle className="land-info--wave CH-VD" cx="80" cy="240" r="14" />
+          <circle className="land-info--wave CH-ZH" cx="365" cy="75" r="14" />
+          <circle className="land-info--wave CH-ZG" cx="347" cy="129" r="14" />
+          <circle className="land-info--wave CH-TG" cx="420" cy="45" r="14" />
+        </g>
+        <g>
+          <circle className="land-info CH-AG" cx="300" cy="75" r="10" />
+          <circle className="land-info CH-AI" cx="465" cy="100" r="10" />
+          <circle className="land-info CH-AR" cx="450" cy="90" r="10" />
+          <circle className="land-info CH-BE" cx="225" cy="200" r="10" />
+          <circle className="land-info CH-BL" cx="250" cy="73" r="10" />
+          <circle className="land-info CH-BS" cx="225" cy="47" r="10" />
+          <circle className="land-info CH-FR" cx="155" cy="220" r="10" />
+          <circle className="land-info CH-GE" cx="25" cy="315" r="10" />
+          <circle className="land-info CH-GL" cx="420" cy="165" r="10" />
+          <circle className="land-info CH-GR" cx="495" cy="225" r="10" />
+          <circle className="land-info CH-JU" cx="165" cy="90" r="10" />
+          <circle className="land-info CH-LU" cx="290" cy="145" r="10" />
+          <circle className="land-info CH-NE" cx="115" cy="160" r="10" />
+          <circle className="land-info CH-NW" cx="330" cy="175" r="10" />
+          <circle className="land-info CH-OW" cx="303" cy="190" r="10" />
+          <circle className="land-info CH-SH" cx="350" cy="17" r="10" />
+          <circle className="land-info CH-SG" cx="455" cy="140" r="10" />
+          <circle className="land-info CH-SO" cx="225" cy="95" r="10" />
+          <circle className="land-info CH-SZ" cx="378" cy="150" r="10" />
+          <circle className="land-info CH-TI" cx="385" cy="300" r="10" />
+          <circle className="land-info CH-UR" cx="360" cy="205" r="10" />
+          <circle className="land-info CH-VS" cx="215" cy="320" r="10" />
+          <circle className="land-info CH-VD" cx="80" cy="240" r="10" />
+          <circle className="land-info CH-ZH" cx="365" cy="75" r="10" />
+          <circle className="land-info CH-ZG" cx="347" cy="129" r="10" />
+          <circle className="land-info CH-TG" cx="420" cy="45" r="10" />
+        </g>
       </svg>
     </>
   );
