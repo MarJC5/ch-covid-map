@@ -2,9 +2,10 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="flex flex-col lg:flex-row justify-cenrer items-center lg:justify-between w-full p-6">
+    <div className="flex flex-col lg:flex-row justify-cenrer items-center lg:justify-between w-full px-6 py-2">
       <h4 className="text-center lg:text-left mb-4 lg:mb-0">
-        <span className="flex items-center font-medium opacity-75 text-xs">Contagion of the coronavirus in Switzerland</span>
+        <span className="flex items-center opacity-75 text-xs">Contagion of the coronavirus in Switzerland</span>
+          <p className="text-xs"> Data sources are from <a className="text-red-500" href="https://github.com/openZH/covid_19/tree/master/fallzahlen_kanton_total_csv">openZH</a></p>
       </h4>
       <ul className="flex flex-row items-center justify-center m-0">
         <li className="mx-3 mb-0 font-bold cursor-pointer">

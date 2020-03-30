@@ -2,4 +2,5 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "./atoms/map.css";
+@import "./molecules/cantons-card.css";
 @import "./organisms/header.css";

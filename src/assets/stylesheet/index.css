@@ -10914,6 +10914,8 @@ video {
 
 @import "./atoms/map.css";
 
+@import "./molecules/cantons-card.css";
+
 @import "./organisms/header.css";
 
 @media (min-width: 640px) {
