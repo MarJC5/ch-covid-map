@@ -8,6 +8,11 @@ function CantonsInfo() {
           <p className="text-sm">Cases:</p>
           <p className="text-sm">Death:</p>
       </div>
+      <div className="absolute card-info opacity-0 bg-white py-2 px-4 CARD-CH-AI flex flex-col">
+          <h6 className="font-bold">AI</h6>
+          <p className="text-sm">Cases:</p>
+          <p className="text-sm">Death:</p>
+      </div>
       <div className="absolute card-info opacity-0 bg-white py-2 px-4 CARD-CH-AR flex flex-col">
           <h6 className="font-bold">AR</h6>
           <p className="text-sm">Cases:</p>

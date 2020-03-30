@@ -15,6 +15,7 @@ class Map extends React.Component {
       }
     }
 
+    // Land hover
     cantons.forEach(function(canton) {
       canton.addEventListener('mouseenter',function(e) {
         const card = document.querySelector(`.CARD-${e.target.id}`);
@@ -23,6 +24,19 @@ class Map extends React.Component {
 
       canton.addEventListener('mouseleave',function(e) {
         const card = document.querySelector(`.CARD-${e.target.id}`);
+        card.classList.toggle('opacity-0')
+      })
+    })
+
+    // Button hover
+    warnButton.forEach(function(button) {
+      button.addEventListener('mouseenter',function(e) {
+        const card = document.querySelector(`.CARD-${e.target.classList[1]}`);
+        card.classList.toggle('opacity-0')
+      })
+
+      button.addEventListener('mouseleave',function(e) {
+        const card = document.querySelector(`.CARD-${e.target.classList[1]}`);
         card.classList.toggle('opacity-0')
       })
     })
