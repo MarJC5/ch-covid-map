@@ -2,8 +2,22 @@ import React from 'react';
 import CantonsInfo from './cantonsInfo';
 
 class Map extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: null,
+    };
+  }
 
   componentDidMount(){
+    // Fetch Cantons data
+    const url = 'https://covid19-rest.herokuapp.com/api/openzh/v1/country/CH';
+
+    fetch(url, {mode: 'cors'})
+      .then(response => response.json())
+      .then(data => this.setState({ data }));
+
+    // Event for display data
     const map = document.querySelector('#map');
     const cantons = map.querySelectorAll('.land');
     const warnButton = map.querySelectorAll('.land-info');
@@ -19,27 +33,27 @@ class Map extends React.Component {
     cantons.forEach(function(canton) {
       canton.addEventListener('mouseenter',function(e) {
         const card = document.querySelector(`.CARD-${e.target.id}`);
-        card.classList.toggle('opacity-0')
-      })
+        card.classList.toggle('opacity-0');
+      });
 
       canton.addEventListener('mouseleave',function(e) {
         const card = document.querySelector(`.CARD-${e.target.id}`);
-        card.classList.toggle('opacity-0')
-      })
-    })
+        card.classList.toggle('opacity-0');
+      });
+    });
 
     // Button hover
     warnButton.forEach(function(button) {
       button.addEventListener('mouseenter',function(e) {
         const card = document.querySelector(`.CARD-${e.target.classList[1]}`);
-        card.classList.toggle('opacity-0')
-      })
+        card.classList.toggle('opacity-0');
+      });
 
       button.addEventListener('mouseleave',function(e) {
         const card = document.querySelector(`.CARD-${e.target.classList[1]}`);
-        card.classList.toggle('opacity-0')
-      })
-    })
+        card.classList.toggle('opacity-0');
+      });
+    });
 
 
   }
