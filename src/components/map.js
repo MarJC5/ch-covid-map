@@ -69,7 +69,6 @@ class Map extends React.Component {
       const url = `api/openzh/v1/country/CH/area/${value}`;
 
       fetch(url, {
-        method: 'GET',
         mode: 'cors',
         headers : {
         'Content-Type': 'application/json',

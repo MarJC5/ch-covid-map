@@ -16,7 +16,6 @@ class Info extends React.Component {
     const url = 'api/openzh/v1/country/CH';
 
     fetch(url, {
-      method: 'GET',
       mode: 'cors',
       headers : {
         'Content-Type': 'application/json',
