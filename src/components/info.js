@@ -13,9 +13,12 @@ class Info extends React.Component {
 
   componentDidMount(){
     // Fetch Totals cases data
-    const url = 'https://covid19-rest.herokuapp.com/api/openzh/v1/country/CH';
+    const url = 'api/openzh/v1/country/CH';
 
-    fetch(url, {mode: 'cors'})
+    fetch(url, {
+      method: 'GET',
+      mode: 'cors',
+    })
       .then(response => response.json())
       .then(data => this.setState({
         cases: data.totals.ncumul_conf,

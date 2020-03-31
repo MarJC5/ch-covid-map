@@ -66,9 +66,13 @@ class Map extends React.Component {
     ]
     for (var i = 0; i < cantonsFetch.length; i++) {
       const value = cantonsFetch[i];
-      const url = `https://covid19-rest.herokuapp.com/api/openzh/v1/country/CH/area/${value}`;
+      const url = `api/openzh/v1/country/CH/area/${value}`;
 
-      fetch(url, {mode: 'cors'}).then(response => response.json()).then(data => {
+      fetch(url, {
+        method: 'GET',
+        mode: 'cors',
+      })
+      .then(response => response.json()).then(data => {
         switch (value) {
           case 'AG' : this.setState({
             AG: {
