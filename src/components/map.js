@@ -5,21 +5,260 @@ class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null,
+      AG: [{death: null, cases: null}],
+      AI: [{death: null, cases: null}],
+      AR: [{death: null, cases: null}],
+      BE: [{death: null, cases: null}],
+      BL: [{death: null, cases: null}],
+      BS: [{death: null, cases: null}],
+      FR: [{death: null, cases: null}],
+      GE: [{death: null, cases: null}],
+      GL: [{death: null, cases: null}],
+      GR: [{death: null, cases: null}],
+      JU: [{death: null, cases: null}],
+      LU: [{death: null, cases: null}],
+      NE: [{death: null, cases: null}],
+      NW: [{death: null, cases: null}],
+      OW: [{death: null, cases: null}],
+      SH: [{death: null, cases: null}],
+      SG: [{death: null, cases: null}],
+      SO: [{death: null, cases: null}],
+      SZ: [{death: null, cases: null}],
+      TI: [{death: null, cases: null}],
+      UR: [{death: null, cases: null}],
+      VS: [{death: null, cases: null}],
+      VD: [{death: null, cases: null}],
+      ZH: [{death: null, cases: null}],
+      ZG: [{death: null, cases: null}],
+      TG: [{death: null, cases: null}],
     };
   }
 
   componentDidMount(){
     // Fetch Cantons data
-    const url = 'https://covid19-rest.herokuapp.com/api/openzh/v1/country/CH';
+    const cantonsFetch = [
+      "AG",
+      "AI",
+      "AR",
+      "BE",
+      "BL",
+      "BS",
+      "FR",
+      "GE",
+      "GL",
+      "GR",
+      "JU",
+      "LU",
+      "NE",
+      "NW",
+      "OW",
+      "SH",
+      "SG",
+      "SO",
+      "SZ",
+      "TI",
+      "UR",
+      "VS",
+      "VD",
+      "ZH",
+      "ZG",
+      "TG"
+    ]
+    for (var i = 0; i < cantonsFetch.length; i++) {
+      const value = cantonsFetch[i];
+      const url = `https://covid19-rest.herokuapp.com/api/openzh/v1/country/CH/area/${value}`;
 
-    fetch(url, {mode: 'cors'})
-      .then(response => response.json())
-      .then(data => this.setState({ data }));
+      fetch(url, {mode: 'cors'}).then(response => response.json()).then(data => {
+        switch (value) {
+          case 'AG' : this.setState({
+            AG: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          });
+          break;
+          case 'AI' : this.setState({
+            AI: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'AR' : this.setState({
+            AR: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'BE' : this.setState({
+            BE: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'BL' : this.setState({
+            BL: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'BS' : this.setState({
+            BS: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'FR' : this.setState({
+            FR: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'GE' : this.setState({
+            GE: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'GL' : this.setState({
+            GL: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'GR' : this.setState({
+            GR: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'JU' : this.setState({
+            JU: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'LU' : this.setState({
+            LU: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'NE' : this.setState({
+            NE: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'NW' : this.setState({
+            NW: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'OW' : this.setState({
+            OW: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'SH' : this.setState({
+            SH: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'SG' : this.setState({
+            SG: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'SO' : this.setState({
+            SO: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'SZ' : this.setState({
+            SZ: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'TI' : this.setState({
+            TI: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'UR' : this.setState({
+            UR: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'VS' : this.setState({
+            VS: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'VD' : this.setState({
+            VD: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'ZH' : this.setState({
+            ZH: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'ZG' : this.setState({
+            ZG: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          case 'TG' : this.setState({
+            TG: {
+              death: data.records.slice(-1)[0].ncumul_deceased,
+              cases: data.records.slice(-1)[0].ncumul_conf
+            }
+          })
+          break;
+          default :
+        }
+      });
+    }
 
     // Event for display data
     const map = document.querySelector('#map');
-    const cantons = map.querySelectorAll('.land');
     const warnButton = map.querySelectorAll('.land-info');
 
     // PolyFill
@@ -28,19 +267,6 @@ class Map extends React.Component {
         [].forEach.call(this, callback);
       }
     }
-
-    // Land hover
-    cantons.forEach(function(canton) {
-      canton.addEventListener('mouseenter',function(e) {
-        const card = document.querySelector(`.CARD-${e.target.id}`);
-        card.classList.toggle('opacity-0');
-      });
-
-      canton.addEventListener('mouseleave',function(e) {
-        const card = document.querySelector(`.CARD-${e.target.id}`);
-        card.classList.toggle('opacity-0');
-      });
-    });
 
     // Button hover
     warnButton.forEach(function(button) {
@@ -59,9 +285,13 @@ class Map extends React.Component {
   }
 
   render() {
+    const {AG, AI, AR, BE, BL, BS, FR, GE, GL, GR, JU, LU, NE, NW, OW, SH, SG, SO, SZ, TI, UR, VS, VD, ZH, ZG, TG} = this.state
     return(
       <>
-        <CantonsInfo/>
+        <CantonsInfo
+            AG={AG} AI={AI} AR={AR} BE={BE} BL={BL} BS={BS} FR={FR} GE={GE}
+            GL={GL} GR={GR} JU={JU} LU={LU} NE={NE} NW={NW} OW={OW} SH={SH}
+            SG={SG} SO={SO} SZ={SZ} TI={TI} UR={UR} VS={VS} VD={VD} ZH={ZH} ZG={ZG} TG={TG}/>
         <svg id="map" className="App-map p-4" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 615 391">
           <g>
             <path id="CH-AG" title="Aargau" className="land" d="M337.26,138.22l3.25,-2.57l1.79,2.51l-0.09,2.61l0,0l-2.66,-2.35L337.26,138.22zM306.15,40.64l4.2,-2.07l1.12,1.24l2.54,-0.34l1.78,1l0.11,3.35l3.95,3.43l7.6,1.16l2.11,-2.23l2.83,1.59l0,0l-0.45,4.42l-3.05,4.06l-1.47,-0.16l-0.53,2.67l-2.2,0.56l-0.53,1.63l0.8,4.16l1.38,0.08l0.17,1.83l-1.21,0.96l2.94,3.12l-0.95,1.03l0.49,2.01l-1.43,0.54l1.71,0.93l0.3,1.91l-1.92,3.78l2.5,1.97l0.32,2.54l1.52,1.45l-0.47,4.73l1.66,1.89l-0.38,2.16l2.95,0.14l2.64,-1.61l-3.54,6.53l-4.22,2.54l-1.2,-0.36l2.7,7.99l0,0l-1.93,4.73l1.44,5.96l-0.5,3.6l1.81,2.59l-0.43,4.73l0,0l-2.5,0.42l-4.28,-1.5l-5.75,-13.87l-0.94,-5.76l-2.13,-2.73l0.43,-2.48l-5.36,-3.01l-1.2,0.1l-1.13,2.76l-1.93,-0.18l-1.09,4.18l-2.05,1.94l-0.04,3.33l-2.52,0.69l-1.16,0.14l-2.9,-3.25l2.67,-0.51l-0.34,-2.44l-6.33,2.16l-2.31,-0.59l-1.29,-3.03l-1.34,-0.59l-2.24,1.6l-2.12,-0.14l0.59,1.88l-4.41,1.07l-1.74,-0.71l0.09,-2.99l-2.89,-4.38l-1.31,1.13l-4.75,0.22l1.48,4.2l-3.76,3.49l-3.1,-1.68l-7.47,2.2l-3.12,-1.21l0,0l-0.62,-5.41l0,0l1.93,-1.49l2.78,-6.54l3.63,-0.87l2.47,-6.27l1.71,1.77l3.76,0.32l0.27,3.04l7.52,-3.95l0.74,-4.01l2.16,-2.34l-0.07,-5.38l-1.71,-0.1l-0.65,-2.66l-6.26,-2.68l0,0l0,0l0,0l2.7,-1.17l0.46,1.11l0.24,-1.37l-1.66,-5.73l-1,-0.82l-1.58,1.41l0,0l-0.76,-1.39l-1.34,-0.02l0.66,-4.46l-5.36,0.06l-1.63,-4.18l-2.41,-1.35l0.03,-2.01l-1.58,0.72l-1.31,-2.97l-2.9,0.12l-0.42,3.78l-3.06,3.46l-2.35,0.78l0.11,-5.08l-6.65,-1.79l-0.24,-1.1l-3.39,-1.16l0,0l10.89,-3.47l3.51,-6.06l2.63,1.16l6.76,-1.04l2.37,3.17l0.42,4.21l4.2,1.3l2.08,-2.79l8.34,1.44l6.34,-2.77l3.04,1.32l2.44,-4.68l3.66,-0.54l1.67,-2.35l2.29,0.26l4.92,-5.13l2.27,0.48L306.15,40.64z"/>
