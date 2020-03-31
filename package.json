@@ -28,12 +28,13 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "npm run watch:css && react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run watch:css && react-scripts start\"",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "postcss src/assets/stylesheet/tailwind.css -o src/assets/stylesheet/index.css",
     "watch:css": "postcss src/assets/stylesheet/tailwind.css -o src/assets/stylesheet/index.css",
+    "client": "watch:css && react-scripts",
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start"
   },
