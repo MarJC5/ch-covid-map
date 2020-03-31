@@ -64,9 +64,10 @@ class Map extends React.Component {
       "ZG",
       "TG"
     ]
+
     for (var i = 0; i < cantonsFetch.length; i++) {
       const value = cantonsFetch[i];
-      const url = `api/openzh/v1/country/CH/area/${value}`;
+      const url = `/api/openzh/v1/country/CH/area/${value}`;
 
       fetch(url, {
         mode: 'cors',
@@ -287,8 +288,6 @@ class Map extends React.Component {
         card.classList.toggle('opacity-0');
       });
     });
-
-
   }
 
   render() {

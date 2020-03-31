@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 
 function App() {
   return (
-    <div className="App font-sans">
+    <div className="App font-sans flex flex-col h-screen justify-between">
       <div className="flex flex-col">
         <div className="flex flex-col items-center justify-center w-full">
           <Info/>
