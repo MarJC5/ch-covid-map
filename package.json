@@ -1,4 +1,5 @@
 {
+  "homepage": "https://marjc5.github.io/ch-covid-map/"
   "name": "ch-covid-map",
   "version": "0.1.0",
   "private": true,
@@ -13,12 +14,14 @@
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     "start": "npm run watch:css && react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "postcss src/assets/stylesheet/tailwind.css -o src/assets/stylesheet/index.css",
-    "watch:css": "postcss src/assets/stylesheet/tailwind.css -o src/assets/stylesheet/index.css"
+    "watch:css": "postcss src/assets/stylesheet/tailwind.css -o src/assets/stylesheet/index.css",
   },
   "eslintConfig": {
     "extends": "react-app"
