@@ -1,36 +1,62 @@
 import React from 'react';
 import CantonsInfo from './cantonsInfo';
+import AGFlag from '../assets/image/cantons/AG.svg';
+import AIFlag from '../assets/image/cantons/AI.svg';
+import ARFlag from '../assets/image/cantons/AR.svg';
+import BEFlag from '../assets/image/cantons/BE.svg';
+import BLFlag from '../assets/image/cantons/BL.svg';
+import BSFlag from '../assets/image/cantons/BS.svg';
+import FRFlag from '../assets/image/cantons/FR.svg';
+import GEFlag from '../assets/image/cantons/GE.svg';
+import GLFlag from '../assets/image/cantons/GL.svg';
+import GRFlag from '../assets/image/cantons/GR.svg';
+import JUFlag from '../assets/image/cantons/JU.svg';
+import LUFlag from '../assets/image/cantons/LU.svg';
+import NEFlag from '../assets/image/cantons/NE.svg';
+import NWFlag from '../assets/image/cantons/NW.svg';
+import OWFlag from '../assets/image/cantons/OW.svg';
+import SHFlag from '../assets/image/cantons/SH.svg';
+import SGFlag from '../assets/image/cantons/SG.svg';
+import SOFlag from '../assets/image/cantons/SO.svg';
+import SZFlag from '../assets/image/cantons/SZ.svg';
+import TIFlag from '../assets/image/cantons/TI.svg';
+import URFlag from '../assets/image/cantons/UR.svg';
+import VSFlag from '../assets/image/cantons/VS.svg';
+import VDFlag from '../assets/image/cantons/VD.svg';
+import ZHFlag from '../assets/image/cantons/ZH.svg';
+import ZGFlag from '../assets/image/cantons/ZG.svg';
+import TGFlag from '../assets/image/cantons/TG.svg';
 
 class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      AG: [{death: null, cases: null}],
-      AI: [{death: null, cases: null}],
-      AR: [{death: null, cases: null}],
-      BE: [{death: null, cases: null}],
-      BL: [{death: null, cases: null}],
-      BS: [{death: null, cases: null}],
-      FR: [{death: null, cases: null}],
-      GE: [{death: null, cases: null}],
-      GL: [{death: null, cases: null}],
-      GR: [{death: null, cases: null}],
-      JU: [{death: null, cases: null}],
-      LU: [{death: null, cases: null}],
-      NE: [{death: null, cases: null}],
-      NW: [{death: null, cases: null}],
-      OW: [{death: null, cases: null}],
-      SH: [{death: null, cases: null}],
-      SG: [{death: null, cases: null}],
-      SO: [{death: null, cases: null}],
-      SZ: [{death: null, cases: null}],
-      TI: [{death: null, cases: null}],
-      UR: [{death: null, cases: null}],
-      VS: [{death: null, cases: null}],
-      VD: [{death: null, cases: null}],
-      ZH: [{death: null, cases: null}],
-      ZG: [{death: null, cases: null}],
-      TG: [{death: null, cases: null}],
+      AG: [{death: null, cases: null, flag: null}],
+      AI: [{death: null, cases: null, flag: null}],
+      AR: [{death: null, cases: null, flag: null}],
+      BE: [{death: null, cases: null, flag: null}],
+      BL: [{death: null, cases: null, flag: null}],
+      BS: [{death: null, cases: null, flag: null}],
+      FR: [{death: null, cases: null, flag: null}],
+      GE: [{death: null, cases: null, flag: null}],
+      GL: [{death: null, cases: null, flag: null}],
+      GR: [{death: null, cases: null, flag: null}],
+      JU: [{death: null, cases: null, flag: null}],
+      LU: [{death: null, cases: null, flag: null}],
+      NE: [{death: null, cases: null, flag: null}],
+      NW: [{death: null, cases: null, flag: null}],
+      OW: [{death: null, cases: null, flag: null}],
+      SH: [{death: null, cases: null, flag: null}],
+      SG: [{death: null, cases: null, flag: null}],
+      SO: [{death: null, cases: null, flag: null}],
+      SZ: [{death: null, cases: null, flag: null}],
+      TI: [{death: null, cases: null, flag: null}],
+      UR: [{death: null, cases: null, flag: null}],
+      VS: [{death: null, cases: null, flag: null}],
+      VD: [{death: null, cases: null, flag: null}],
+      ZH: [{death: null, cases: null, flag: null}],
+      ZG: [{death: null, cases: null, flag: null}],
+      TG: [{death: null, cases: null, flag: null}],
     };
   }
 
@@ -81,182 +107,208 @@ class Map extends React.Component {
           case 'AG' : this.setState({
             AG: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: AGFlag
             }
           });
           break;
           case 'AI' : this.setState({
             AI: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: AIFlag
             }
           })
           break;
           case 'AR' : this.setState({
             AR: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: ARFlag
             }
           })
           break;
           case 'BE' : this.setState({
             BE: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: BEFlag
             }
           })
           break;
           case 'BL' : this.setState({
             BL: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: BLFlag
             }
           })
           break;
           case 'BS' : this.setState({
             BS: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: BSFlag
             }
           })
           break;
           case 'FR' : this.setState({
             FR: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: GEFlag
             }
           })
           break;
           case 'GE' : this.setState({
             GE: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: GEFlag
             }
           })
           break;
           case 'GL' : this.setState({
             GL: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: GLFlag
             }
           })
           break;
           case 'GR' : this.setState({
             GR: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: GRFlag
             }
           })
           break;
           case 'JU' : this.setState({
             JU: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: JUFlag
             }
           })
           break;
           case 'LU' : this.setState({
             LU: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: LUFlag
             }
           })
           break;
           case 'NE' : this.setState({
             NE: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: NEFlag
             }
           })
           break;
           case 'NW' : this.setState({
             NW: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: NWFlag
             }
           })
           break;
           case 'OW' : this.setState({
             OW: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: OWFlag
             }
           })
           break;
           case 'SH' : this.setState({
             SH: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: SHFlag
             }
           })
           break;
           case 'SG' : this.setState({
             SG: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: SGFlag
             }
           })
           break;
           case 'SO' : this.setState({
             SO: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: SOFlag
             }
           })
           break;
           case 'SZ' : this.setState({
             SZ: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: SZFlag
             }
           })
           break;
           case 'TI' : this.setState({
             TI: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: TIFlag
             }
           })
           break;
           case 'UR' : this.setState({
             UR: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: URFlag
             }
           })
           break;
           case 'VS' : this.setState({
             VS: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: VSFlag
             }
           })
           break;
           case 'VD' : this.setState({
             VD: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: VDFlag
             }
           })
           break;
           case 'ZH' : this.setState({
             ZH: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: ZHFlag
             }
           })
           break;
           case 'ZG' : this.setState({
             ZG: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: ZGFlag
             }
           })
           break;
           case 'TG' : this.setState({
             TG: {
               death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              cases: data.records.slice(-1)[0].ncumul_conf,
+              flag: TGFlag
             }
           })
           break;
@@ -267,6 +319,7 @@ class Map extends React.Component {
 
     // Event for display data
     const map = document.querySelector('#map');
+    const cantons = map.querySelectorAll('.land');
     const warnButton = map.querySelectorAll('.land-info');
 
     // PolyFill
@@ -288,10 +341,23 @@ class Map extends React.Component {
         card.classList.toggle('opacity-0');
       });
     });
+
+    cantons.forEach(function(canton) {
+      canton.addEventListener('mouseenter',function(e) {
+        const card = document.querySelector(`.CARD-${e.target.id}`);
+        card.classList.toggle('opacity-0');
+      });
+
+      canton.addEventListener('mouseleave',function(e) {
+        const card = document.querySelector(`.CARD-${e.target.id}`);
+        card.classList.toggle('opacity-0');
+      });
+    });
   }
 
   render() {
     const {AG, AI, AR, BE, BL, BS, FR, GE, GL, GR, JU, LU, NE, NW, OW, SH, SG, SO, SZ, TI, UR, VS, VD, ZH, ZG, TG} = this.state
+
     return(
       <>
         <CantonsInfo

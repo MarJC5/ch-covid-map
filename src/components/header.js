@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from '../assets/image/covid.svg';
+import CHFlag from '../assets/image/cantons/CH.svg';
 
 function Header() {
   return (
     <>
-      <header className="App-header flex flex-row justify-center items-center p-4">
-        <img src={logo} className="App-logo m-4" alt="logo" />
-        <div>
-          <h1 className="text-sm uppercase font-bold">switzerland<br/> covid-19 map</h1>
-        </div>
-      </header>
+      <a href="/ch-covid-map">
+        <header className="App-header flex flex-row justify-start items-center lg:w-1/2 mx-6 p-4">
+          <img src={CHFlag} className="App-logo m-4 rounded" alt="logo" />
+          <div>
+            <h1 className="text-sm uppercase font-bold">switzerland<br/><span className="font-normal">covid-19 map</span></h1>
+          </div>
+        </header>
+      </a>
     </>
   );
 }

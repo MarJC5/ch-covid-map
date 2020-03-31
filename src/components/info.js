@@ -34,20 +34,19 @@ class Info extends React.Component {
     const { cases, death, recovered } = this.state
 
     return(
-      <div className="flex flex-col lg:flex-row justify-between items-center w-full">
+      <div className="flex flex-col lg:flex-row justify-between items-center w-full mb-20 lg:mb-12">
         <Header/>
-        <div className="covid-status flex justify-center mb-20 lg:mb-4 h-full">
-          <div className="covid-status__total-count h-24 w-full lg:w-40 m-4 border-black flex flex-col justify-center">
-            <h5 className="text-sm p-2 uppercase">Cases</h5>
-            <p className="font-bold opacity-75 text-sm">{cases}</p>
+        <div className="covid-status flex justify-center lg:w-1/2">
+          <div className="covid-status__total-count h-24 w-auto lg:w-40 m-4 border-black flex flex-col justify-center">
+            <h5 className="shadow rounded font-bold text-sm p-2 uppercase">Cases <span className="font-normal text-sm">{cases}</span></h5>
           </div>
-          <div className="covid-status__death h-24 w-full lg:w-40 m-4 border-black flex flex-col justify-center">
-            <h5 className="text-sm p-2 uppercase">Death</h5>
-            <p className="font-bold opacity-75 text-sm">{death}</p>
+          <div className="covid-status__death h-24 w-auto lg:w-40 m-4 border-black flex flex-col justify-center">
+            <h5 className="shadow rounded font-bold text-sm p-2 uppercase">Death <span className="font-normal text-sm">{death}</span></h5>
+
           </div>
-          <div className="covid-status__recovered h-24 w-full lg:w-40 m-4 border-black flex flex-col justify-center">
-            <h5 className="text-sm p-2 uppercase">Recovered</h5>
-            <p className="font-bold opacity-75 text-sm">{recovered}</p>
+          <div className="covid-status__recovered h-24 w-auto lg:w-40 m-4 border-black flex flex-col justify-center">
+            <h5 className="shadow rounded font-bold text-sm p-2 uppercase">Recovered <span className="font-normal text-sm">{recovered}</span></h5>
+
           </div>
         </div>
       </div>
