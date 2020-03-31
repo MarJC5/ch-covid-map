@@ -66,7 +66,7 @@ class Map extends React.Component {
     ]
     for (var i = 0; i < cantonsFetch.length; i++) {
       const value = cantonsFetch[i];
-      const url = `api/openzh/v1/country/CH/area/${value}`;
+      const url = `/api/openzh/v1/country/CH/area/${value}`;
 
       fetch(url, {
         method: 'GET',

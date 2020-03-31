@@ -13,7 +13,7 @@ class Info extends React.Component {
 
   componentDidMount(){
     // Fetch Totals cases data
-    const url = 'api/openzh/v1/country/CH';
+    const url = '/api/openzh/v1/country/CH';
 
     fetch(url, {
       method: 'GET',
