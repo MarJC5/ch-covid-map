@@ -18,6 +18,10 @@ class Info extends React.Component {
     fetch(url, {
       method: 'GET',
       mode: 'cors',
+      headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
     })
       .then(response => response.json())
       .then(data => this.setState({
