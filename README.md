@@ -8,13 +8,14 @@ In the project directory, you can run:
 
 ### `yarn start`
 First run do:
-``
+	
+~~~~
 yarn install
 cd server 
 yarn install
 cd ..
 yarn start
-``
+~~~~
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000/ch-covid-map](http://localhost:3000/ch-covid-map) to view it in the browser.
