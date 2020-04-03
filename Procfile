@@ -1,1 +1,1 @@
-web: npm run start
+web: yarn --cwd ./server/ start && yarn run start
