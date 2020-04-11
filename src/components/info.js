@@ -27,9 +27,9 @@ class Info extends React.Component {
     })
       .then(response => response.json())
       .then(data => this.setState({
-        cases: data.totals.ncumul_conf,
-        death: data.totals.ncumul_deceased,
-        recovered: data.totals.ncumul_released,
+        cases: data.totals.ncumul_conf_fwd,
+        death: data.totals.ncumul_deceased_fwd,
+        recovered: data.totals.ncumul_released_fwd,
         lastUpdate: {date: data.records.slice(-1)[0].date, time: data.records.slice(-1)[0].time}
       }));
   }

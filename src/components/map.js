@@ -80,183 +80,183 @@ class Map extends React.Component {
         switch (value) {
           case 'AG' : this.setState({
             AG: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           });
           break;
           case 'AI' : this.setState({
             AI: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'AR' : this.setState({
             AR: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'BE' : this.setState({
             BE: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'BL' : this.setState({
             BL: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'BS' : this.setState({
             BS: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'FR' : this.setState({
             FR: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'GE' : this.setState({
             GE: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'GL' : this.setState({
             GL: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'GR' : this.setState({
             GR: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'JU' : this.setState({
             JU: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'LU' : this.setState({
             LU: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'NE' : this.setState({
             NE: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'NW' : this.setState({
             NW: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'OW' : this.setState({
             OW: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'SH' : this.setState({
             SH: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'SG' : this.setState({
             SG: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'SO' : this.setState({
             SO: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'SZ' : this.setState({
             SZ: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'TI' : this.setState({
             TI: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'UR' : this.setState({
             UR: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'VS' : this.setState({
             VS: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'VD' : this.setState({
             VD: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'ZH' : this.setState({
             ZH: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'ZG' : this.setState({
             ZG: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
           case 'TG' : this.setState({
             TG: {
-              death: data.records.slice(-1)[0].ncumul_deceased,
-              cases: data.records.slice(-1)[0].ncumul_conf
+              death: data.records.slice(-1)[0].ncumul_deceased_fwd,
+              cases: data.records.slice(-1)[0].ncumul_conf_fwd
             }
           })
           break;
