@@ -27,7 +27,7 @@
     "react-scripts": "3.4.1",
     "sass": "^1.26.3",
     "tailwindcss": "^1.2.0",
-    "yargs-parser": "13.1.2"
+    "yargs-parser": "20.2.9"
   },
   "scripts": {
     "predeploy": "npm run build",
