@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/apfeuti/covid19-rest#readme",
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "2.0.6"
   },
   "engines": {
     "node": "12.x"
