@@ -26,7 +26,7 @@
     "react-dom": "17.0.2",
     "react-scripts": "4.0.3",
     "sass": "1.43.2",
-    "tailwindcss": "2.2.17",
+    "tailwindcss": "2.2.19",
     "yargs-parser": "20.2.9"
   },
   "scripts": {
